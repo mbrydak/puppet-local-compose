@@ -3,7 +3,7 @@ version: '3'
 services:
   puppet:
     hostname: puppet.${DOMAIN:-internal}
-    image: puppet/puppetserver
+    build: build
     ports:
       - 8140:8140
     environment:
